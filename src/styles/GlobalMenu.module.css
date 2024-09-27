@@ -1,0 +1,32 @@
+.globalMenu {
+  grid-area: globalMenu;
+  background-color: #efc7dd;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.globalMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.globalMenu ul li {
+  font-size: 18px;
+}
+
+.globalMenu ul li a {
+  text-decoration: none;
+  color: rgb(226, 10, 165);
+  font-weight: 600;
+}
+
+.globalMenu ul li a:hover {
+    font-size: 20px;
+    transition: all 0.3s ease;
+}

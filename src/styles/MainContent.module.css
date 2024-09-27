@@ -1,0 +1,77 @@
+.mainContent {
+  grid-area: mainContent;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 10px;
+  padding: 20px;
+  background-color: #FAE7EB;
+  row-gap: 10px;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.product {
+  border: 2px solid transparent;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, transform 0.2s ease;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.product p {
+  margin-bottom: 15px;
+}
+
+.product p:nth-child(2) {
+  color: #D81B60;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product p:nth-child(3) {
+  color: #6A0DAD;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.selectButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+}
+
+.selectButton img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.selected {
+  border: 2px solid pink;
+}
